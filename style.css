@@ -1,5 +1,5 @@
 body{
-    background: #9eafd7;
+    background-image: url("bodyBackground.jpg");
 }
 .container{
     padding: 0;
@@ -13,18 +13,17 @@ h1{
     display: inline-block;
     background: #0c2b00;
     margin-bottom: 0;
-    border: 6px solid #d3eeec;
+    border: 6px solid #b39c9c;
     border-bottom: none;
 }
 .wrap{
     background-image: url("background.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
     /* background: #0c2b00; */
     background-size: cover;
     height: 550px;
-    padding-top: 30px;
-    border: 6px solid #d3eeec;
+    padding-top: 20px;
+    border: 6px solid #b39c9c;
 }
 .row{
     margin:0px;
@@ -47,13 +46,22 @@ h1{
     justify-content: center;
     align-items: center;
     height: 30px;
-    color: white;
+    border: 3px dotted white;
     font-size:10px;
     position: absolute;
-    top:550px;
+    top:582px;
     width:50px;
     border-radius: 10px;
     left:603px;
+    z-index: 10;
+    /* transition: 3s all ease; */
+}
+.whiteBoard{
+    position: absolute;
+    width: 1128px;
+    height:65px;
+    background-image: url("bodyBackground.jpg");
+    top:565px;
 }
 #reload{
     position: absolute;

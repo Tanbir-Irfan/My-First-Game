@@ -10,9 +10,19 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="detailsBoard">
+        <img src="img/DetailsBoard.gif" alt="">
+        <div class="scoreDetails">
+            <div id="nameScore">
+                <p><b>Name:</b> <input type="text" id="participantNameInput" class="form-control" placeholder="Enter Your Name"></input></p>
+                <p><b>Target Score:</b> <input id="targetScoreInput" type="text" class="form-control" placeholder="Enter Your Target Score Within 30s"></p>
+            </div>
+            <button id="startGame" class="btn">Start</button>
+        </div>
+    </div>
+    <div class="container" id="gameBoard">
         <div class="header">
-            <h1 class="text-center p-3 px-5">My First Game (Tanbir Irfan)</h1>
+            <div class="logo"></div>
         </div>
         <div class="wrap">
             <div class="row">
@@ -81,10 +91,19 @@
             </div>
             <div class="text-center" id="special" class="i"> Irfan </div>
             <div class="whiteBoard"></div>
-            <button id="reload" class="btn btn-danger text-light">Reload</button>
+            <div id="timer">30</div>
         </div>
     </div>
-
+    <div class="container" id="scoreBoard">
+        <img src="img/congratulations.gif" alt="">
+        <div class="scoreDetails">
+            <div id="nameScore">
+                <p><b>Name:</b> <span id="participantNamePrint">Tanbir Irfan</span></p>
+                <p><b>Score:</b> <span id="finalScorePrint">10</span></p>
+            </div>
+            <button id="playAgain" class="btn">Play Again</button>
+        </div>
+    </div>
     <script src="script.js"></script>
     <script src="jquery-1.9.0.min.js"></script>
     <script src="bootstrap.min.js"></script>

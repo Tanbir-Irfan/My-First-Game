@@ -1,5 +1,5 @@
 body{
-    background-image: url("bodyBackground.jpg");
+    background-image: url("img/bodyBackground.jpg");
 }
 .container{
     padding: 0;
@@ -8,16 +8,21 @@ body{
     display: flex;
     justify-content: center;
 }
-h1{
-    color:white;
-    display: inline-block;
-    background: #0c2b00;
-    margin-bottom: 0;
+.logo{
+    background-image: url("img/logo_.gif");
+    background-size: 280px 65px;
+    background-repeat: no-repeat;
     border: 6px solid #b39c9c;
     border-bottom: none;
+    width: 500px;
+    height: 100px;
+    background-position: 100px;
+}
+#gameBoard{
+    display: none;
 }
 .wrap{
-    background-image: url("background.jpg");
+    background-image: url("img/background.jpg");
     background-repeat: no-repeat;
     /* background: #0c2b00; */
     background-size: cover;
@@ -54,17 +59,97 @@ h1{
     border-radius: 10px;
     left:603px;
     z-index: 10;
-    /* transition: 3s all ease; */
 }
 .whiteBoard{
     position: absolute;
     width: 1128px;
     height:65px;
-    background-image: url("bodyBackground.jpg");
+    background-image: url("img/bodyBackground.jpg");
     top:565px;
 }
-#reload{
+#timer{
     position: absolute;
-    top:370px;
-    right:30px;
+    width: 270px;
+    height: auto;
+    top: 0px;
+    left: 150px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #45bd8b;
+    font-size: 55px;
 }
+#detailsBoard{
+    background:transparent;
+    width:500px;
+    height: 100px;
+    margin:100px auto;
+    color:#d9e177;
+    font-size: 20px;
+    display: block;
+}
+#detailsBoard img{
+    width: 350px;
+    height: 81px;
+    display: block;
+    margin: 0 auto;
+}
+#detailsBoard .scoreDetails{
+    padding: 0px 60px;
+}
+#detailsBoard #nameScore{
+    padding: 40px;
+    padding-top: 8px;
+}
+#detailsBoard #nameScore input{
+    margin: 5px 0px 20px 0px;
+}
+#startGame{
+    display: block;
+    margin: 0 auto;
+    margin-top: -25px;
+    background: #d9e177;
+    color: #395051 !important;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+}
+#scoreBoard{
+    background:transparent;
+    width:500px;
+    height: 100px;
+    margin:100px auto;
+    color:#d9e177;
+    font-size: 30px;
+    display: none;
+}
+#scoreBoard img{
+    width: 350px;
+    height: 81px;
+    display: block;
+    margin: 0 auto;
+}
+.scoreDetails{
+    padding: 20px;
+    margin-top:10px;
+    background-image: url("img/ScoreBackground.jpg");
+    background-size: cover;
+    height: 270px;
+}
+#playAgain{
+    display: block;
+    margin: 0 auto;
+    margin-top: 55px;
+    background: #d9e177;
+    color: #395051 !important;
+    cursor: pointer;
+}
+#participantsName, #score{
+    padding-left: 8px;
+}
+#nameScore {
+    padding-left: 55px;
+    padding-top: 20px;
+}
+

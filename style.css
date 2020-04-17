@@ -1,5 +1,6 @@
 body{
-    background-image: url("img/bodyBackground.jpg");
+    background-image: url("img/bodyBackground.gif");
+    background-size: cover;
 }
 .container{
     padding: 0;
@@ -135,24 +136,34 @@ body{
 }
 .scoreDetails{
     padding: 20px;
-    margin-top:10px;
     background-image: url("img/ScoreBackground.jpg");
     background-size: cover;
-    height: 270px;
+    height: 280px;
+    margin-top: 20px;
 }
-#playAgain{
-    display: block;
-    margin: 0 auto;
-    margin-top: 55px;
+.buttonBox{
+    display: flex;
+    justify-content: space-around;
+}
+.playAgain_{
+    margin-top: 35px;
+    width: 110px;
     background: #d9e177;
     color: #395051 !important;
     cursor: pointer;
+}
+#Exit{
+    background: #dc3545 !important;
+    color:white !important;
 }
 #participantsName, #score{
     padding-left: 8px;
 }
 #nameScore {
     padding-left: 55px;
-    padding-top: 20px;
+    padding-top: 15px;
+}
+#nameScore p{
+    margin-bottom: 0;
 }
 

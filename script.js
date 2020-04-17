@@ -35,6 +35,7 @@ var scoreBoard = $("#scoreBoard");
 var participantNamePrint = $("#participantNamePrint");
 var finalScorePrint = $("#finalScorePrint");
 var playAgain = $("#playAgain");
+var exit = $("#Exit");
 startGame.addEventListener("click", function () {
     namePreserve = participantName.value;
     targetPreserve = targetScore.value;
@@ -210,12 +211,19 @@ function scoreFunction() {
     yAxis = 0;
 }
 playAgain.addEventListener("click", function () {
+    scoreButton();
+    gameBoard.style.display = "block";
+});
+exit.addEventListener("click",function(){
+    scoreButton();
+    detailsBoard.style.display = "block";
+})
+function scoreButton(){
     allColor();
     blockDisplay();
     scoreBoard.style.display = "none";
-    gameBoard.style.display = "block";
     timerFunction();
     pointerPosition(603);
     clearTimeout(timeOut1);
     clearTimeout(timeOut2);
-});
+}
